@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/naoina/migu"
+	"github.com/tamurayoshiya/migu"
 )
 
 var (
