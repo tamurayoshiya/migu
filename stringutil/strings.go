@@ -79,7 +79,7 @@ func ToUpperCamelCase(s string) string {
 					initialism = append(initialism, runeBuf[:n]...)
 				}
 			}
-			if length := commonInitialism.LookupByBytes(initialism); length > 0 {
+			if length := commonInitialism.LookupByBytes(initialism); length > 0 && len(initialism) == length {
 				result = append(result[:start], initialism...)
 			}
 			start = len(result)
@@ -139,7 +139,7 @@ func ToUpperCamelCaseASCII(s string) string {
 			for _, b := range candidate {
 				initialism = append(initialism, toUpperASCII(b))
 			}
-			if length := commonInitialism.LookupByBytes(initialism); length > 0 {
+			if length := commonInitialism.LookupByBytes(initialism); length > 0 && len(initialism) == length {
 				result = append(result[:start], initialism...)
 			}
 			start = len(result)

@@ -58,6 +58,7 @@ var commonTestCasesForToUpperCamelCase = []struct {
 	{"xml", "XML"},
 	{"xsrf", "XSRF"},
 	{"xss", "XSS"},
+	{"identification_id_label", "IdentificationIDLabel"},
 }
 
 func TestToUpperCamelCase(t *testing.T) {
