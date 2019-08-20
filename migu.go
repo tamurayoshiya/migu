@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/naoina/go-stringutil"
-	"github.com/naoina/migu/dialect"
+	"github.com/tamurayoshiya/migu/dialect"
+	"github.com/tamurayoshiya/migu/stringutil"
 )
 
 const (
